@@ -1,0 +1,46 @@
+//TAMMY bool insert(std::string namefreq, std::vector<pair> vec){
+bool insert(std::string namefreq, std::string duh){
+  int num = namefreq.size() + 1;
+  for(int x= 0; x< vec.size(); ++x){ //through vector
+    std::string temp = namefreq;
+    if(num == vec[x].name.size()){
+    for(int y = 0; y < vec[y].name.size(); ++y){ // through vector word
+        if(vec[x].name[y] == temp[y]){ // doesn't match
+          temp.insert( y, 1, vec[x].name[y] );
+          if(temp.compare(vec[x].name) == 0){
+              std::cout << vec[x].name << " " << vec[x].freq << std::endl;
+              return true;
+          }
+          else{
+            break;
+          }
+        }
+    }
+    }
+  }
+  return false;
+}
+
+
+
+
+bool deletey(std::string namefreq,  std::string duh, int duhduh ){
+  //int num = namefreq.size() - 1;
+for (int x= 0; x < vec.size(); ++x){
+    if(num == vec[x].name.size()){
+    for(int i =0; i < namefreq.size(); i++){
+      std::string temp = namefreq;
+      temp.erase(i, 1);
+      if(vec[x].name.compare(temp) == 0){
+
+        std::cout << vec[x].name << " " << vec[x].freq << std::endl;
+        return true;
+      }
+      else{
+        break;
+      }
+    }
+    }
+  }
+  return false;
+}
